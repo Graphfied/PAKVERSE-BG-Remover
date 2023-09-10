@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAKVERSE BG REMOVER</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/869858670316515329/1150368873137307809/PAKVERSE_1.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-r from-pink-200 to-blue-200 flex items-center justify-center h-screen">
+    <h1 class="text-3xl font-bold mb-6">PAKVERSE BG REMOVER</h1>
+    <div class="container bg-white bg-opacity-20 rounded-xl p-6 shadow-xl">
+        <input type="file" id="uploadImage" accept="image/*" class="p-2 rounded-md mb-4">
+        <button id="removeBackground" class="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text hover:from-pink-500 hover:to-yellow-500 p-2 rounded-md w-full">Remove Background</button>
+        <div class="image-display flex justify-between mt-6">
+            <img id="uploadedImage" src="" alt="Uploaded Image" class="rounded-md">
+            <img id="processedImage" src="" alt="Processed Image" class="rounded-md">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

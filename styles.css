@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f3e7e9, #e3eeff);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.image-display {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 45%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button, input[type="file"] {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+button:hover, input[type="file"]:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    color: #333;
+}
