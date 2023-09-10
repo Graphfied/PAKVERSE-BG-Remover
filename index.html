@@ -8,13 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-r from-pink-200 to-blue-200 flex items-center justify-center h-screen">
+<body class="bg-gradient-to-r from-pink-200 to-blue-200 flex flex-col items-center justify-center min-h-screen p-4">
     <h1 class="text-3xl font-bold mb-6">PAKVERSE BG REMOVER</h1>
-    <div class="container bg-white bg-opacity-20 rounded-xl p-6 shadow-xl">
-        <input type="file" id="uploadImage" accept="image/*" class="p-2 rounded-md mb-4">
+    <div class="container bg-white bg-opacity-20 rounded-xl p-6 shadow-xl w-full max-w-lg">
+        <input type="file" id="uploadImage" accept="image/*" class="p-2 rounded-md mb-4 w-full">
         <button id="removeBackground" class="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text hover:from-pink-500 hover:to-yellow-500 p-2 rounded-md w-full">Remove Background</button>
-        <div class="image-display flex justify-between mt-6">
-            <img id="uploadedImage" src="" alt="Uploaded Image" class="rounded-md">
+        <div class="image-display flex flex-col md:flex-row justify-between mt-6">
+            <img id="uploadedImage" src="" alt="Uploaded Image" class="rounded-md mb-4 md:mb-0">
             <img id="processedImage" src="" alt="Processed Image" class="rounded-md">
         </div>
     </div>
